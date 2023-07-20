@@ -136,3 +136,10 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.select_height{
+  position: absolute;
+}
+.accordion_position{
+  position: relative;
+  top: 50px;
+}
