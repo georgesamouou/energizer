@@ -9,7 +9,7 @@ import logo from "../assets/logoCnps.png"
 const Main = () => {
     const [active,setActive] = useState(1)
     return (
-        <div className='mainContainer'>
+        <div className='mainContainer position-fixed fixed-top'>
             <div className='NavigationContainer'>
                 <div className="d_flex mt-2">
                     <img src={logo} alt="Logo Cnps" className='logoCnps' />                                                                                         

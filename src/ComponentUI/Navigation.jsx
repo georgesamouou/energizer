@@ -11,7 +11,7 @@ const Navigation = ({text,active,setActive}) => {
         }
     }
     return (
-        <div onClick={handleChangeState} className= {`p-2 navigationBox ${active}`}>
+        <div onMouseEnter={handleChangeState} className= {`p-2 navigationBox ${active}`}>
             {text}
         </div>
     );

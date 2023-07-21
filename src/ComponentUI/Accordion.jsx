@@ -4,7 +4,7 @@ import traitementDoc from "../MenuData/menu1";
 import Select from 'react-select'
 import { Suivi } from "../MenuData/menu2";
 import diversesExtraction from "../MenuData/menu3";
-const Accordions = ({navSideData}) => {
+const Accordions = ({navSideData,setDisplayNav}) => {
     const [data,setData]=useState([
         {title: "Nombre ", content: ["Lorem ipsum dolor sit amet."]},
         {title: "Historique", content: ["Lorem ipsum dolor sit amet."]},
@@ -67,6 +67,7 @@ const Accordions = ({navSideData}) => {
             }
         })
     }
+    const handleDisplayNav = ()=>setDisplayNav(false)
     /*const data = [
         {title: "Nombre ", content: "Lorem ipsum dolor sit amet."},
         {title: "Historique", content: "Lorem ipsum dolor sit amet."},
@@ -87,7 +88,7 @@ const Accordions = ({navSideData}) => {
                             </AccordionHeader>
                             <AccordionBody className="">
                                     {item.content.map(e=>
-                                        <div className="accordion-body accordionBody">
+                                        <div onClick={handleDisplayNav} className="accordion-body accordionBody">
                                             {e}
                                         </div>
                                         )}
